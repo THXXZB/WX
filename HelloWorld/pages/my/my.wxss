@@ -1,0 +1,70 @@
+/* pages/my/my.wxss */
+.container{
+  padding: 0;
+}
+.header{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  background-color: #fff;
+}
+.header__hd{
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #b9b9b9;
+  font-size: 12px;
+  padding-left: 12px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  /* border: 1px solid #000; */
+}
+.header__hd text{
+  float: left;
+  font-size: 14px;
+  color: #666;
+}
+.header__hd .downtips{
+  /* border: 6px solid #fff;
+  border-left-color: #000;  */
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #aaa;
+  float: left;
+  margin-left: 1px;
+}
+.header__bd{
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+.header__bd-btn{
+  width: 70px;
+  height: 45px;
+  display: inline-block;
+  line-height: 45px;
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+  text-align: center;
+}
+.header__ft{
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-left: 1px solid #d8d8d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__ft image{
+  width: 23px;
+  height: 23px;
+}
+.slide-image{
+  width: 100%;
+}
