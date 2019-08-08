@@ -1,0 +1,57 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <scroll-view>
+    <view class="header">
+      <view class="header__hd">
+        <text>{{city}}</text>
+        <view class="downtips"></view>
+      </view>
+      <view class="header__bd">
+        <view class="header__bd-hot header__bd-btn">正在上映</view>
+          <view class="header__bd-waiting header__bd-btn">即将上映</view>
+      </view>
+      <view class="header__ft">
+        <image src="../../images/shouye.png"></image>
+      </view>
+    </view>
+    <swiper indicator-dots="true" indicator-active-color="#f40" autoplay="true" circular="true" interval="3000" duration="1000" >
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355"height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="movie-lists" wx:for="{{items}}" wx:key="{{index}}">
+      <view class="flex item">
+        <view class="item_left">
+        <!-- item:for循环中默认item为循环的每一项 -->
+          <image src="{{item.imgUrl}}"></image>
+        </view>
+        <view class="item_middle">
+          <view class="flex_auto">
+            <text class="title">{{item.name}}</text>
+          </view>
+          <view>
+            <view class="item_grade">
+              <text class="score" wx:if="{{!item.isShow}}"> {{item.wantSee}} <text style="font-size: 12px">人想看</text>
+              </text>
+              <text class="score" wx:else> {{item.grade}} <text style="font-size: 12px">分</text>
+              </text>
+            </view>
+          </view>
+          <view>
+            <text class="actor font-desc">主演：{{item.actor}}</text>
+          </view>
+          <view>
+            <view class="desc font-desc">今天{{item.showInfo.cinema}}家影院放映{{item.showInfo.times}}场</view>
+          </view>
+        </view>
+        <view class="item_right">
+          <view>
+            <text class="buy" style="background-color: {{item.isShow == 0 ? '#52b0eb' : '#ef4238'}}">{{item.isShow == 0 ? '预售' : '购票'}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
