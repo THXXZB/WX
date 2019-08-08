@@ -13,9 +13,9 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.7.7",
 	"appid": "wx9bf2827600e77e61",
-	"projectname": "HelloWorld",
+	"projectname": "miniprogram-1",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
