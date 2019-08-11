@@ -43,6 +43,7 @@ Page({
       [selected]: !this.data.carts[index].selected
     });
     this.getTotalPrice();
+    // 修改全选
     let carts = this.data.carts;
     for(let cart of carts){
       if(!cart.selected){
@@ -115,7 +116,11 @@ Page({
     this.setData({
       carts: carts
     })
-    
+    if(!this.data.carts.length){
+      this.setData({
+        hasList: false
+      })
+    }
     this.getTotalPrice();
   },
   /**
