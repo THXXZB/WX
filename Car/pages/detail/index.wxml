@@ -1,0 +1,7 @@
+<!--pages/detail/index.wxml-->
+<view>
+  <view wx:for="{{cart}}">
+    <view>{{itme.name}}</view>  
+    <view>{{itme.price}}</view> 
+  </view>
+</view>
