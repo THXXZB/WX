@@ -1,13 +1,35 @@
 // pages/stories/index.js
+const db = require("../../assets/db.js")
+let currentVideo = null;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    stories: db.stories || [],
+    currentVId: null
   },
-
+  // 播放
+  play: function(event){
+    if(currentVideo){
+      currentVideo.pause();
+    }
+    const vId = event.target.dataset.id;
+    if(vId){
+      // 根据id创建一个操作视频的对象
+      // console.log(vId);
+      currentVideo = wx.createVideoContext('' + vId);
+      currentVideo.play();
+      currentVideo.sendDanmu({
+        text: '666',
+        color: '#f00'
+      });
+      this.setData({
+        currentVId: vId
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */

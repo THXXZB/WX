@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<swiper indicator-dots="{{true}}"
+<swiper indicator-dots="{{true}}" circular="true"
   autoplay="{{true}}" interval="{{5000}}" duration="{{500}}" class="section hero white">
   <block wx:for="{{slides}}" wx:key="id">
     <swiper-item>
