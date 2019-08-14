@@ -1,0 +1,24 @@
+/**index.wxss**/
+.main{
+  font-family: sans-serif;
+}
+.header__sorts{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  white-space: nowrap;
+}
+.header__sorts .item{
+  display: inline-block;
+  width: 100rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #000;
+}
+.header__sorts .item-active{
+  color: #d81e06;
+  border-bottom: 2px solid #d81e06;
+}

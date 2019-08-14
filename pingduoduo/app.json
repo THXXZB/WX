@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/recommend/index",
+    "pages/select/index",
+    "pages/user/index",
+    "pages/talk/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d81e06",
+    "navigationBarTitleText": "拼多多",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/icons/首页.png",
+        "selectedIconPath": "assets/icons/首页1.png"
+      },
+      {
+        "pagePath": "pages/recommend/index",
+        "text": "推荐",
+        "iconPath": "assets/icons/推荐.png",
+        "selectedIconPath": "assets/icons/推荐1.png"
+      },
+      {
+        "pagePath": "pages/select/index",
+        "text": "搜索",
+        "iconPath": "assets/icons/搜索.png",
+        "selectedIconPath": "assets/icons/搜索1.png"
+      },
+      {
+        "pagePath": "pages/talk/index",
+        "text": "聊天",
+        "iconPath": "assets/icons/聊天记录.png",
+        "selectedIconPath": "assets/icons/聊天记录1.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人中心",
+        "iconPath": "assets/icons/我的.png",
+        "selectedIconPath": "assets/icons/我的1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

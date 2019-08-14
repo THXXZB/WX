@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="main">
+  <scroll-view scroll-x scroll-left="0" scroll-with-animation="true" class="header__sorts">
+    <view wx:for="{{productSorts}}" wx:key="item.sortId" id="item.sortId" class="item {{currentSortId == item.sortId ? 'item-active' : ''}}">{{item.text}}</view>
+  </scroll-view>
+</view>
