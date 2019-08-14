@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<view>Home</view>
+<vant-button square type="primary" block bind:click="navigateToAdd">add data</vant-button>
+<vant-button square type="primary" block bind:click="navigateToIndex">query data</vant-button>
