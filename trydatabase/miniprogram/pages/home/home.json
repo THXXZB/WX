@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "vant-button": "../../vant-weapp/button/index"
+    "vant-button": "../../dist/button/index",
+    "vant-search": "../../dist/search/index"
   }
 }
