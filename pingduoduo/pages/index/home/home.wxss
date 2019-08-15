@@ -1,0 +1,119 @@
+/* pages/index/home/home.wxss */
+swiper {
+  padding-top: 2px;
+  height: 234.66666rpx;
+} 
+swiper-item > navigator {
+  /* display: block; */
+  width: 100%;
+  height: 100%; 
+}
+swiper-item > navigator > image{
+  width: 100%;
+  height: 100%;
+}
+
+.actives {
+  white-space: normal;
+}
+
+.actives__wrap {
+  display: flex; 
+  flex-wrap: wrap;
+  
+}
+
+.actives__item {
+  height: 150rpx;
+  box-sizing: border-box;
+  text-align: center;
+  /* background-color: #fff; */
+}
+.actives__item image{
+  display: block;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  /* height: 100% */
+}
+.actives__item text{
+  display: block;
+  font-size: 26rpx;
+}
+.progress-wrap{
+  height: 80rpx;
+  /* padding: 20rpx 0; */
+  box-sizing: border-box;
+  /* border: 1px solid #000; */
+  padding-top:30rpx;
+  border-bottom: 20rpx solid #eee;
+}
+.progress{
+  width: 120rpx;
+  height: 10rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  background-color: #eee;
+}
+.line{
+  width: 12.5%;
+  height: 100%;
+  border-radius: 10rpx;
+  background-color: #f40;
+}
+
+.products{
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid #eee;
+}
+.products image{
+  width: 100%;
+}
+.description{
+  display: block;
+  font-size: 26rpx;
+  color: #222;
+  padding: 0 20rpx;
+}
+.price-paied-info{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20rpx 5rpx;
+}
+.price-paied-info .price{
+  color: #f40;
+  font-size: 20rpx;
+}
+.price-paied-info .price text{
+  font-size: 36rpx;
+  padding: 0 15rpx;
+}
+
+.price-paied-info .paied{
+  flex: 1;
+  font-size: 20rpx;
+  color: #999;
+}
+.price-paied-info .customers{
+  width: 100rpx;
+  position: relative;
+  /* border: 1px solid #000; */
+}
+.price-paied-info .customers .avatar{
+  position: absolute;
+  top: 0;
+  left: 35rpx;
+  transform: translateY(-50%);
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+.price-paied-info .customers .avatar:first-child{
+  left: 0;
+  z-index: 1;
+  border: 1px solid #fff;
+}
+

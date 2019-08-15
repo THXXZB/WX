@@ -1,0 +1,35 @@
+<!--pages/index/home/home.wxml-->
+<swiper indicator-dots="true"
+  autoplay="true" 
+  interval="3000" 
+  duration="2000"
+  circular="true"
+  indicator-color="rgba(255, 255, 255, .3)"
+  indicator-active-color="#f40"
+  >
+  <block wx:for="{{banners}}" wx:key>
+    <swiper-item>
+      <navigator url="{{item.linkUrl}}">
+        <image src="{{item.imgUrl}}"  mode="scaleToFill"/>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<scroll-view scroll-x scroll-left="0" scroll-with-animation="true" class="actives" bindscroll="scrollView">
+  <view class="actives__wrap" style="width: {{activesWrapWidth}}">
+    <navigator wx:for="{{actives}}" wx:key url="{{item.linkUrl}}" class="actives__item" style="width: {{activesItemWidth}}">
+      <image src="{{item.imgUrl}}"></image>
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+</scroll-view>
+<view class="progress-wrap">
+  <view class="progress">
+    <view class="line" style="margin-left: {{progressLineMarginLeft}}; width: {{progressLineWidth}}"></view>
+  </view>
+</view>
+
+<import src="/templates/tem-home.wxml"/>
+
+<template is="home-products" data="{{item}}" wx:for="{{products}}" wx:key/>
+

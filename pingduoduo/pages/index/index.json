@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "home": "./home/home",
+    "sorts": "./sorts/sorts"
+  }
 }

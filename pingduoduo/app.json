@@ -1,11 +1,13 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/index/home/home",
     "pages/logs/logs",
     "pages/recommend/index",
     "pages/select/index",
     "pages/user/index",
-    "pages/talk/index"
+    "pages/talk/index",
+    "pages/index/sorts/sorts"
   ],
   "window": {
     "backgroundTextStyle": "light",

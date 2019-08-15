@@ -1,6 +1,7 @@
 /**index.wxss**/
 .main{
   font-family: sans-serif;
+  padding-top: 74rpx;
 }
 .header__sorts{
   position: fixed;
@@ -20,5 +21,5 @@
 }
 .header__sorts .item-active{
   color: #d81e06;
-  border-bottom: 2px solid #d81e06;
+  border-bottom: 3px solid #d81e06;
 }
