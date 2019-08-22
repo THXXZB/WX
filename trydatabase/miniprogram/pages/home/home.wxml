@@ -3,3 +3,24 @@
 <vant-button square type="primary" block bind:click="navigateToAdd">add data</vant-button>
 <vant-button square type="primary" block bind:click="navigateToIndex">query data</vant-button>
 <vant-search></vant-search>
+<vant-nav-bar title="标题"
+  right-text=">"
+  left-text="按钮"
+  ></vant-nav-bar>
+  <van-cell title="店铺" value="进入店铺" icon="shop-o" is-link url="../index/index">
+        <template slot="title">
+          <span class="van-cell-text">有赞的店</span>
+          <van-tag class="goods-tag" type="danger">官方</van-tag>
+        </template>
+      </van-cell>
+<van-cell title="买家秀" icon="photo"  center url="../index/index" is-link>
+  
+</van-cell>
+
+<van-cell title="单元格" icon="shop-o">
+  <van-icon
+    slot="right-icon"
+    name="search"
+    style="line-height: inherit;"
+  />
+</van-cell>

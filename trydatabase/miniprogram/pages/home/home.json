@@ -1,6 +1,10 @@
 {
   "usingComponents": {
     "vant-button": "../../dist/button/index",
-    "vant-search": "../../dist/search/index"
+    "vant-search": "../../dist/search/index",
+    "vant-nav-bar": "../../dist/nav-bar/index",
+    "van-cell":"../../dist/cell",
+    "van-tag":"../../dist/tag/index",
+    "van-icon": "../../dist/icon"
   }
 }
