@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="main">
-  <scroll-view scroll-x scroll-left="0" scroll-with-animation="true" class="header__sorts">
+  <scroll-view scroll-x scroll-left="{{scrollLeft}}" scroll-with-animation="true" class="header__sorts">
     <view wx:for="{{productSorts}}"
       wx:key="index" 
       id="{{item.sortId}}"
@@ -10,5 +10,5 @@
     </view>
   </scroll-view>
   <home wx:if="{{currentSortId == 0}}"></home>
-  <sorts wx:for="{{sortCompoent}}" wx:key="index" wx:if="{{currentSortId == item.sortId}}"></sorts>
+  <sorts wx:for="{{sortCompoent}}" wx:key="index" wx:if="{{currentSortId == item.sortId}}" sort-id="{{currentSortId}}">{{item.sortId}}</sorts>
 </view>

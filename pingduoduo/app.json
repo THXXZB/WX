@@ -1,19 +1,20 @@
 {
   "pages": [
+    "pages/recommend/index",
+    "pages/talk/index",
     "pages/index/index",
+    "pages/index/sorts/sorts",
     "pages/index/home/home",
     "pages/logs/logs",
-    "pages/recommend/index",
     "pages/select/index",
     "pages/user/index",
-    "pages/talk/index",
-    "pages/index/sorts/sorts"
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#d81e06",
     "navigationBarTitleText": "拼多多",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#707070",

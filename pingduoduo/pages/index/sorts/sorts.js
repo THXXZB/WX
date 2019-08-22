@@ -1,66 +1,33 @@
 // pages/index/sorts/sorts.js
-Page({
-
-  /**
-   * 页面的初始数据
-   */
+const db = require("../../../assets/db.js")
+Component({
+  properties: {
+    sortId: {
+      type: Number,
+      value: 1
+    }
+  },
   data: {
-
+    menuList: [],
+    products: []
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  ready: function () {
+    this.setData({
+      menuList: this.getMenuList(this.properties.sortId),
+      products: this.getProducts(this.properties.sortId)
+    });
+    // console.log(this.data.menuList);
   },
+  methods: {
+    // 根据ID获取相应的数据
+    getMenuList: function (sortId) {
+      console.log(sortId)
+      return db.menuList || [];
+    },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    getProducts: function (sortId) {
+      console.log(sortId)
+      return db.products || [];
+    }
   }
 })

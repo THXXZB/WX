@@ -1,2 +1,10 @@
 <!--pages/talk/index.wxml-->
-<text>pages/talk/index.wxml</text>
+<view class="main">
+  <view class="recommend">
+    <image src="/assets/icons/Diamond.png"></image>
+    <text>为你推荐</text>
+  </view>
+
+  <import src="/templates/tem-sorts.wxml"/>
+  <template is="sorts-products" data="{{item}}" wx:for="{{products}}" wx:key/>
+</view>

@@ -1,1 +1,45 @@
 /* pages/index/sorts/sorts.wxss */
+@import "../../../templates/tem-products.wxss";
+.menu{
+  width: 100%;
+  height: 100%;
+  /* border: 1rpx solid #000; */
+}
+.menu__item{
+  width: 20%;
+  height: 180rpx;
+  text-align: center;
+  display:inline-block;
+  box-sizing: border-box;
+  padding: 24rpx 0;
+}
+.menu__item image{
+  display: block;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+}
+.menu__item text{
+  font-size: 26rpx;
+}
+.info{
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+.label{
+  display: inline-block;
+  font-size:20rpx;
+  background-color: rgb(255, 0, 0, .1);
+  border-radius: 10rpx;
+  color: #f40;
+  margin-left: 5rpx;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+}
+.description{
+  padding: 0 10rpx;
+}
+.price-paied-info{
+  padding: 10rpx;
+}
+

@@ -1,4 +1,5 @@
 /* pages/index/home/home.wxss */
+@import "../../../templates/tem-products.wxss";
 swiper {
   padding-top: 2px;
   height: 234.66666rpx;
@@ -46,7 +47,7 @@ swiper-item > navigator > image{
   box-sizing: border-box;
   /* border: 1px solid #000; */
   padding-top:30rpx;
-  border-bottom: 20rpx solid #eee;
+  border-bottom: 10rpx solid #eee;
 }
 .progress{
   width: 120rpx;
@@ -61,59 +62,3 @@ swiper-item > navigator > image{
   border-radius: 10rpx;
   background-color: #f40;
 }
-
-.products{
-  width: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  border: 2px solid #eee;
-}
-.products image{
-  width: 100%;
-}
-.description{
-  display: block;
-  font-size: 26rpx;
-  color: #222;
-  padding: 0 20rpx;
-}
-.price-paied-info{
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 20rpx 5rpx;
-}
-.price-paied-info .price{
-  color: #f40;
-  font-size: 20rpx;
-}
-.price-paied-info .price text{
-  font-size: 36rpx;
-  padding: 0 15rpx;
-}
-
-.price-paied-info .paied{
-  flex: 1;
-  font-size: 20rpx;
-  color: #999;
-}
-.price-paied-info .customers{
-  width: 100rpx;
-  position: relative;
-  /* border: 1px solid #000; */
-}
-.price-paied-info .customers .avatar{
-  position: absolute;
-  top: 0;
-  left: 35rpx;
-  transform: translateY(-50%);
-  width: 50rpx;
-  height: 50rpx;
-  border-radius: 50%;
-}
-.price-paied-info .customers .avatar:first-child{
-  left: 0;
-  z-index: 1;
-  border: 1px solid #fff;
-}
-

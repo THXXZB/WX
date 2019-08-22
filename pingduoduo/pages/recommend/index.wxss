@@ -1,1 +1,63 @@
 /* pages/recommend/index.wxss */
+@import "../../templates/tem-products.wxss";
+@import "../../templates/tem-recommend.wxss";
+
+/* .van-cell{
+  height: 100rpx;
+} */
+.van-cell__left-icon-wrap {
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 50%;
+  border: 2rpx solid #f40;
+  
+}
+.van-icon-photo{
+  color: #f40;
+  margin: 0 auto;
+}
+.van-cell__title{
+  font-size: 28rpx ;
+  color: #000;
+  margin-left: 10rpx;
+}
+.products{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5rpx solid #eee;
+  border-right: 10rpx solid #eee;
+  border-left: 10rpx solid #eee;
+  border-radius: 10rpx;
+}
+
+.products image{
+  display: block;
+  width: 300rpx;
+  height: 300rpx;
+}
+.info{
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+
+.label{
+  display: inline-block;
+  font-size:20rpx;
+  background-color: rgb(255, 0, 0, .1);
+  border-radius: 10rpx;
+  color: #f40;
+  margin: 0 5rpx 0 10rpx;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+  margin-top: 100rpx;
+}
+.description{
+  padding: 0 10rpx;
+}
+.price-paied-info{
+  padding: 10rpx;
+}
+

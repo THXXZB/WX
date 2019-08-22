@@ -1,2 +1,18 @@
-<!--pages/index/sorts/sorts.wxml-->
-<text>pages/index/sorts/sorts.wxml</text>
+<!-- pages/index/sorts/sorts.wxml -->
+<view class="sorts">
+  <view class="menu">
+    <navigator url="" wx:for="{{menuList}}" wx:key="index" class="menu__item">
+      <image src="{{item.imgUrl}}"></image>
+      <text>{{item.name}}</text>
+    </navigator>
+
+    <navigator url="" class="menu__item">
+      <image src="/assets/icons/more.png"></image>
+      <text>查看全部</text>
+    </navigator>
+  </view>
+
+  <import src="/templates/tem-sorts.wxml"/>
+  <template is="sorts-products" data="{{item}}" wx:for="{{products}}" wx:key/>
+
+</view>

@@ -1,0 +1,18 @@
+<template name="sorts-products">
+  <navigator url="{{item.linkUrl}}" class="products">
+    <image src="{{item.imgUrl}}" mode="aspectFit"></image>
+    <view class="info">
+      <text class="description">{{item.description}}</text>
+      <view class="label">极速退款</view>
+      <view class="price-paied-info">
+        <view class="price">￥<text>{{item.price}}</text></view>
+        <view class="paied">已拼{{item.saledNum}}万件</view>
+        <view class="customers">
+          <image class="avatar" src="{{item.customer1}}"></image>
+          <image class="avatar" src="{{item.customer2}}"></image>
+        </view>
+      </view>
+    </view>
+    
+  </navigator>
+</template>

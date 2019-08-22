@@ -1,11 +1,13 @@
 // pages/talk/index.js
+const db = require("../../assets/db.js")
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    products: db.products || []
   },
 
   /**
