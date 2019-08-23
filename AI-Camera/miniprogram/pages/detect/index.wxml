@@ -1,0 +1,9 @@
+<!--miniprogram/pages/detect/index.wxml-->
+<view class="container">
+  <view class="header">
+  
+  </view>
+  <view class="footer">
+  
+  </view>
+</view>
