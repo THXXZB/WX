@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/recommend/index",
+    "pages/user/index",
     "pages/talk/index",
+    "pages/recommend/index",
     "pages/index/index",
     "pages/index/sorts/sorts",
     "pages/index/home/home",
     "pages/logs/logs",
-    "pages/select/index",
-    "pages/user/index",
+    "pages/search/index",
     "pages/test/test"
   ],
   "window": {
@@ -33,7 +33,7 @@
         "selectedIconPath": "assets/icons/推荐1.png"
       },
       {
-        "pagePath": "pages/select/index",
+        "pagePath": "pages/search/index",
         "text": "搜索",
         "iconPath": "assets/icons/搜索.png",
         "selectedIconPath": "assets/icons/搜索1.png"

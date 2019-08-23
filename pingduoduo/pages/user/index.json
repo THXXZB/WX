@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-cell": "../../dist/cell",
+    "van-col": "../../dist/col",
+    "van-row": "../../dist/row",
+    "van-icon": "../../dist/icon"
+  },
+  "navigationBarTitleText": "我的"
 }

@@ -2,7 +2,7 @@
   width: 50%;
   display: inline-block;
   box-sizing: border-box;
-  border: 2px solid #eee;
+  border: 1px solid #eee;
 }
 .products image{
   width: 100%;

@@ -1,6 +1,6 @@
 <!--pages/recommend/index.wxml-->
 <view class="main">
-  <van-cell title="买家秀" value="超赞推荐" icon="photo" is-link url="../test/test" > </van-cell>
+  <van-cell title="买家秀" value="超赞推荐" icon="photo" is-link url="../test/test" size="large"> </van-cell>
   <view class="recommend">
     <image src="/assets/icons/star.png"></image>
     <text>为你推荐</text>

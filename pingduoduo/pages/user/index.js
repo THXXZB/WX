@@ -1,11 +1,15 @@
 // pages/user/index.js
+const db = require("../../assets/db.js")
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    myOrder: db.myOrder || [],
+    myCollect: db.mycollect || [],
+    myList: db.myList || [],
+    products: db.products || []
   },
 
   /**

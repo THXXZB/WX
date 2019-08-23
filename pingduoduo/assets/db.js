@@ -220,5 +220,97 @@ module.exports = {
       imgUrl: '/assets/img/1.jpg',
       name: '皮草'
     }
+  ],
+  myOrder:[
+    {
+      iconUrl: '/assets/icons/wallet.png',
+      title: '待付款'
+    },
+    {
+      iconUrl: '/assets/icons/share.png',
+      title: '待分享'
+    },
+    {
+      iconUrl: '/assets/icons/wait.png',
+      title: '待发货'
+    },
+    {
+      iconUrl: '/assets/icons/get.png',
+      title: '待收货'
+    },
+    {
+      iconUrl: '/assets/icons/recommend.png',
+      title: '待评价'
+    },
+
+
+
+
+  ],
+  mycollect: [
+    {
+      iconUrl: '/assets/icons/coupon.png',
+      title: '优惠券'
+    },
+    {
+      iconUrl: '/assets/icons/product.png',
+      title: '商品收藏'
+    },
+    {
+      iconUrl: '/assets/icons/store.png',
+      title: '店铺收藏'
+    },
+    {
+      iconUrl: '/assets/icons/footMark.png',
+      title: '足迹'
+    },
+    {
+      iconUrl: '/assets/icons/drawback.png',
+      title: '退款售后'
+    }
+
+  ],
+  myList: [
+    {
+      iconUrl: '/assets/icons/prize.png',
+      title: '一份抽奖'
+    },
+    {
+      iconUrl: '/assets/icons/tree.png',
+      title: '多多果园'
+    },
+    {
+      iconUrl: '/assets/icons/bargin.png',
+      title: '砍价免费拿'
+    },
+    {
+      iconUrl: '/assets/icons/address.png',
+      title: '收货地址'
+    },
+    {
+      iconUrl: '/assets/icons/airplane.png',
+      title: '多多旅行'
+    },
+    {
+      iconUrl: '/assets/icons/vedio.png',
+      title: '边看边逛'
+    },
+    {
+      iconUrl: '/assets/icons/recommend2.png',
+      title: '我的评价'
+    },
+    {
+      iconUrl: '/assets/icons/service.png',
+      title: '官方客服'
+    },
+    {
+      iconUrl: '/assets/icons/vedio2.png',
+      title: '精彩视频'
+    },
+    {
+      iconUrl: '/assets/icons/set.png',
+      title: '设置'
+    }
+
   ]
 }

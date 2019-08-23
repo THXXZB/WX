@@ -1,12 +1,12 @@
 <!-- pages/index/sorts/sorts.wxml -->
 <view class="sorts">
   <view class="menu">
-    <navigator url="" wx:for="{{menuList}}" wx:key="index" class="menu__item">
+    <navigator url="/pages/test/test" wx:for="{{menuList}}" wx:key="index" class="menu__item">
       <image src="{{item.imgUrl}}"></image>
       <text>{{item.name}}</text>
     </navigator>
 
-    <navigator url="" class="menu__item">
+    <navigator url="/pages/test/test" class="menu__item">
       <image src="/assets/icons/more.png"></image>
       <text>查看全部</text>
     </navigator>

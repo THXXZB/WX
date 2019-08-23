@@ -1,2 +1,24 @@
 <!--pages/user/index.wxml-->
-<text>pages/user/index.wxml</text>
+<view class="main">
+
+  <van-cell title="我的订单" value="查看全部" is-link url="../test/test"></van-cell>
+  <view class="row">
+    <import src="/templates/tem-user.wxml"/>
+    <template is="user-myOrder" data="{{item}}" wx:for="{{myOrder}}" wx:key/>
+  </view>
+  <view class="row collect">
+    <import src="/templates/tem-user.wxml"/>
+    <template is="user-myOrder" data="{{item}}" wx:for="{{myCollect}}" wx:key/>
+  </view>
+  <view class="row list">
+    <import src="/templates/tem-user.wxml"/>
+    <template is="user-myOrder" data="{{item}}" wx:for="{{myList}}" wx:key/>
+  </view>
+
+  <view class="recommend">
+    <image src="/assets/icons/Diamond.png"></image>
+    <text>为你推荐</text>
+  </view>
+  <import src="/templates/tem-sorts.wxml"/>
+  <template is="sorts-products" data="{{item}}" wx:for="{{products}}" wx:key/>
+</view>

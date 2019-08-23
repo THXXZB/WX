@@ -1,0 +1,10 @@
+<!--templates/temp-user.wxml-->
+<template name="user-myOrder"> 
+  <view class="column">
+    <navigator url="/pages/test/test"> 
+      <image mode="aspectFit" src="{{item.iconUrl}}"></image>
+      <text>{{item.title}}</text>
+    </navigator>
+  </view>
+
+</template>

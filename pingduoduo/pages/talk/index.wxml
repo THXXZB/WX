@@ -1,5 +1,9 @@
 <!--pages/talk/index.wxml-->
 <view class="main">
+
+  <van-cell title="优惠通知" value="今天" size="large" label="限时话费红包，最高10元，充值立减！" icon="invition" url="../test/test"></van-cell>
+  <van-cell title="拼多多官方客服" value="08:06" size="large" label="亲，早上好，多多祝您一天好心情~告诉多多您的问题吧~" icon="service" url="../test/test"></van-cell>
+
   <view class="recommend">
     <image src="/assets/icons/Diamond.png"></image>
     <text>为你推荐</text>

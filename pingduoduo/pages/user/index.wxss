@@ -1,1 +1,43 @@
 /* pages/user/index.wxss */
+@import '/templates/tem-user.wxss';
+@import "/templates/tem-products.wxss";
+@import "../../templates/tem-recommend.wxss";
+
+.van-cell{
+  padding: 30rpx 20rpx 5rpx !important;
+}
+.van-cell:after{
+  border-bottom: none !important;
+}
+.van-cell__title{
+  font-size: 30rpx;
+  letter-spacing: 10rpx;
+}
+.row.list{
+  flex-wrap: wrap;
+}
+.row.list .column{
+  width: 20%;
+  flex: none;
+}
+.info{
+  box-sizing: border-box;
+  padding: 10rpx;
+}
+.label{
+  display: inline-block;
+  font-size:20rpx;
+  background-color: rgb(255, 0, 0, .1);
+  border-radius: 10rpx;
+  color: #f40;
+  margin-left: 5rpx;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+}
+.description{
+  padding: 0 10rpx;
+}
+.price-paied-info{
+  padding: 10rpx;
+}
+

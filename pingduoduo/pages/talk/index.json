@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "van-cell": "../../dist/cell",
+    "van-tag": "../../dist/tag"
+  },
   "navigationBarTitleText": "聊天"
 }

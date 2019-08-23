@@ -2,6 +2,31 @@
 @import "../../templates/tem-products.wxss";
 @import "../../templates/tem-recommend.wxss";
 
+.van-cell__left-icon-wrap,.van-cell__right-icon-wrap {
+  width: 80rpx !important;
+  height: 80rpx !important;
+  font-size: 60rpx !important;
+  color: #f40;
+  align-content: center;
+  border: 5rpx solid #f40;
+  border-radius: 50%;
+  padding-left: 6rpx !important;
+  box-sizing: border-box;
+  margin-top: 8rpx;
+}
+.van-cell__left-icon{
+}
+.van-cell__title{
+  flex: none !important;
+  width: 500rpx !important;
+  margin-left: 10rpx;
+}
+.van-cell__label {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .label{
   display: inline-block;
   font-size:20rpx;

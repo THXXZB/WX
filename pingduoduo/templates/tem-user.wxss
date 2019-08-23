@@ -1,0 +1,25 @@
+/* templates/temp-user.wxss */
+.row{
+  width: 100%;
+  /* height: 100rpx; */
+  display: flex;
+  justify-content: center;
+  border-bottom: 10rpx solid #eee;
+}
+.column{
+  flex: 1;
+  text-align: center;
+  padding: 20rpx;
+  /* border: 1px solid #000; */
+  box-sizing: border-box;
+}
+.column image{
+  display: block;
+  width: 50%;
+  margin: 0 auto 5rpx;
+  height: 80rpx;
+}
+.column text{
+  font-size: 22rpx;
+  color: #333;
+}
