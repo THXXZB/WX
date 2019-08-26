@@ -1,2 +1,35 @@
 <!--pages/select/index.wxml-->
-<text>pages/select/index.wxml</text>
+<view class="main">
+  <view class="search">
+    <image src="/assets/icons/搜索.png"></image>
+    <text>双筒军备望远镜</text>
+  </view>
+  <!-- <view class="container"> -->
+    <view class="category-left">
+      <view class="cate-list {{curIndex == item.id ? 'on' : ''}}" 
+        wx:for="{{productSorts}}" wx:key 
+        data-id="{{item.id}}" 
+        bindtap="switchTab">{{item.text}}
+      </view>
+    </view>
+    <scroll-view class="category-right" scroll-y scroll-into-view="{{toView}}" scroll-width-animation="true">
+      <block wx:for="{{productSorts}}" wx:key="{{item.id}}">
+        <view class="cate-box" id="{{item.id}}">
+          <van-cell title="{{item.text}}" value="查看全部" is-link url="../test/test"></van-cell>
+          <view class="cate-banner">
+            <image src="/assets/img/active.jpg"></image>
+          </view>
+          <view class="product">
+            <view class="product-list" wx:for="{{menuList}}" wx:key="index" wx:for-item="product">
+              <navigator url="/pages/test/test">
+                <image src="{{product.imgUrl}}"></image>
+                <view class="classname"><text>{{product.name}}</text></view>
+              </navigator>
+            </view>
+          </view>
+        </view>
+      </block>
+      </scroll-view>
+
+  <!-- </view> -->
+  </view>

@@ -2,51 +2,63 @@ module.exports = {
   productSorts: [
     {
       text: "热门",
-      sortId: 0
+      sortId: 0,
+      id: 'hot'
     },
     {
       text: "女装",
-      sortId: 1
+      sortId: 1,
+      id: 'dress'
     },
     {
       text: "年货",
-      sortId: 2
+      sortId: 2,
+      id: 'goods'
     },
     {
-      text: "手机",
-      sortId: 3
+      text: "充值",
+      sortId: 3,
+      id: 'invest'
     },
     {
       text: "鞋包",
-      sortId: 4
+      sortId: 4,
+      id: 'shoes'
     },
     {
       text: "电器",
-      sortId: 5
+      sortId: 5,
+      id: 'equipment'
     },
     {
       text: "服饰",
-      sortId: 6
+      sortId: 6,
+      id: 'clothes'
     },
     {
       text: "百货",
-      sortId: 7
+      sortId: 7,
+      id: 'merchandise'
     },
     {
       text: "家纺",
-      sortId: 8
+      sortId: 8,
+      id: 'textiles'
     },
     {
       text: "母婴",
-      sortId: 9
+      sortId: 9,
+      id: 'mother'
     },
     {
       text: "水果",
-      sortId: 10
+      sortId: 10,
+      id: 'fruit'
     },
     {
       text: "运动",
-      sortId: 11
+      sortId: 11,
+      id: 'sports'
     }
   ],
   banners: [
@@ -65,84 +77,94 @@ module.exports = {
   ],
   actives: [
     {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/限时秒杀.png',
       linkUrl: '/pages/test/test',
       name: '限时秒杀'
     },
     {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/断码清仓.png',
       linkUrl: '/pages/test/test',
-      name: '品牌清仓'
+      name: '断码清仓'
     },
     {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/品牌馆.png',
       linkUrl: '/pages/test/test',
-      name: '食品超市'
+      name: '品牌馆'
     },
     {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/多多果园.png',
       linkUrl: '/pages/test/test',
-      name: '品质水果'
+      name: '多多果园'
     },
     {
-      imgUrl: '/assets/img/collection.png',
-      linkUrl: '/pages/test/test',
-      name: '爱逛街'
-    },
-    {
-      imgUrl: '/assets/img/collection.png',
-      linkUrl: '/pages/test/test',
-      name: '家居优品'
-    },
-    {
-      imgUrl: '/assets/img/collection.png',
-      linkUrl: '/pages/test/test',
-      name: '电器城'
-    },
-    {
-      imgUrl: '/assets/img/collection.png',
-      linkUrl: '/pages/test/test',
-      name: '时尚穿搭'
-    },
-    {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/9块9特卖.png',
       linkUrl: '/pages/test/test',
       name: '9块9特卖'
     },
     {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/助力享免单.png',
       linkUrl: '/pages/test/test',
-      name: '名品折扣'
+      name: '助力享免单'
     },
     {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/天天领现金.png',
       linkUrl: '/pages/test/test',
-      name: '一份抽奖'
+      name: '天天领现金'
     },
     {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/一分抽大奖.png',
       linkUrl: '/pages/test/test',
-      name: '手机充值'
+      name: '一分抽大奖'
     },
     {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/省钱月卡.png',
       linkUrl: '/pages/test/test',
-      name: '分1亿红包'
+      name: '省钱月卡'
     },
     {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/充值中心.png',
       linkUrl: '/pages/test/test',
-      name: '省钱妈咪'
+      name: '充值中心'
     },
     {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/百亿补贴.png',
       linkUrl: '/pages/test/test',
-      name: '海淘'
+      name: '百亿补贴'
     },
     {
-      imgUrl: '/assets/img/collection.png',
+      imgUrl: '/assets/img/现金签到.png',
       linkUrl: '/pages/test/test',
-      name: '我的订单'
+      name: '现金签到'
+    },
+    {
+      imgUrl: '/assets/img/金猪赚大钱.png',
+      linkUrl: '/pages/test/test',
+      name: '金猪赚大钱'
+    },
+    {
+      imgUrl: '/assets/img/电器城.png',
+      linkUrl: '/pages/test/test',
+      name: '电器城'
+    },
+    {
+      imgUrl: '/assets/img/爱逛街.png',
+      linkUrl: '/pages/test/test',
+      name: '爱逛街'
+    },
+    {
+      imgUrl: '/assets/img/砍价免费拿.png',
+      linkUrl: '/pages/test/test',
+      name: '砍价免费拿'
+    },
+    {
+      imgUrl: '/assets/img/多多爱消除.png',
+      linkUrl: '/pages/test/test',
+      name: '多多爱消除'
+    },
+    {
+      imgUrl: '/assets/img/每日好店.png',
+      linkUrl: '/pages/test/test',
+      name: '每日好店'
     }
   ],
   products: [
@@ -185,40 +207,40 @@ module.exports = {
   ],
   menuList: [
     {
-      imgUrl: '/assets/img/1.jpg',
-      name: '女装'
+      imgUrl: '/assets/img/个人洗护.jpg',
+      name: '个人洗护'
     },
     {
-      imgUrl: '/assets/img/1.jpg',
-      name: '女裤'
+      imgUrl: '/assets/img/烹饪用具.jpg',
+      name: '烹饪用具'
     },
     {
-      imgUrl: '/assets/img/1.jpg',
-      name: '休闲裤'
+      imgUrl: '/assets/img/收纳洗晒.jpg',
+      name: '收纳洗晒'
     },
     {
-      imgUrl: '/assets/img/1.jpg',
-      name: '内衣裤袜'
+      imgUrl: '/assets/img/水杯水壶.jpg',
+      name: '水杯水壶'
     },
     {
-      imgUrl: '/assets/img/1.jpg',
-      name: '套装'
+      imgUrl: '/assets/img/图书教辅.jpg',
+      name: '图书教辅'
     },
     {
-      imgUrl: '/assets/img/1.jpg',
-      name: '卫衣'
+      imgUrl: '/assets/img/鲜花绿植.jpg',
+      name: '鲜花绿植'
     },
     {
-      imgUrl: '/assets/img/1.jpg',
-      name: '羽绒服'
+      imgUrl: '/assets/img/纸品湿巾.jpg',
+      name: '纸品湿巾'
     },
     {
-      imgUrl: '/assets/img/1.jpg',
-      name: '连衣裙'
+      imgUrl: '/assets/img/珠宝饰品.jpg',
+      name: '珠宝饰品'
     },
     {
-      imgUrl: '/assets/img/1.jpg',
-      name: '皮草'
+      imgUrl: '/assets/img/宠物及用品.jpg',
+      name: '宠物及用具'
     }
   ],
   myOrder:[

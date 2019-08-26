@@ -25,21 +25,24 @@ swiper-item > navigator > image{
 }
 
 .actives__item {
+  margin-top: 20rpx;
   height: 150rpx;
-  box-sizing: border-box;
   text-align: center;
+  /* padding: 20rpx 0;
+  box-sizing: border-box; */
   /* background-color: #fff; */
 }
 .actives__item image{
   display: block;
-  width: 70%;
-  height: 70%;
-  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto 10rpx;
   /* height: 100% */
 }
 .actives__item text{
   display: block;
   font-size: 26rpx;
+  color: #999;
 }
 .progress-wrap{
   height: 80rpx;

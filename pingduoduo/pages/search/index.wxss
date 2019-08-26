@@ -1,1 +1,95 @@
-/* pages/select/index.wxss */
+.main{
+  width: 100%;
+  /* height: 100%; */
+}
+.search{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 700rpx;
+  height: 80rpx;
+  margin: 10rpx 25rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  background-color: #eee;
+  border-bottom: 1rpx solid #aaa;
+}
+.search text{
+  color: #999;
+  line-height: 80rpx;
+}
+.search image{
+  position: absolute;
+  top: 20rpx;
+  left: 180rpx;
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  /* border: 1px solid #000; */
+}
+
+.category-left{
+  float: left;
+  width: 150rpx;
+  /* height: 100%; */
+  border-right: 1px solid #ddd;
+  /* 边框不会增加view的width */
+  box-sizing: border-box;
+  margin-top: 100rpx;
+}
+.cate-list{
+  height: 110rpx;
+  line-height: 110rpx;
+  text-align: center;
+  border-left: 3px solid #fff;
+}
+.cate-list.on{
+  color: #f40;
+  border-color: #f40;
+}
+.category-right {
+  float: right;
+  width: 600rpx;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 100rpx;
+}
+.cate-box {
+  /* width: 100%; */
+  height: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  /* border: 1rpx solid #000; */
+}
+/* .cate-box van-cell{
+  width: 100%;
+} */
+.van-cell {
+  padding: 0 15rpx 30rpx !important;
+}
+.cate-box .cate-banner{
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+.cate-box .cate-banner image{
+    display: block;
+    width: 100%;
+    height: 180rpx;
+}
+
+.product-list{
+    display: inline-block;
+    width: 160rpx;
+    height: 160rpx;
+    text-align: center;
+    margin:0 20rpx 20rpx 0;
+    font-size: 24rpx;
+}
+.product-list image{
+    width: 80rpx;
+    height: 80rpx;
+    margin-bottom: 20rpx;
+}
+.product-list:nth-child(3n){
+    margin-right: 0;
+}

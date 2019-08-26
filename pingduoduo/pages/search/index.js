@@ -1,13 +1,25 @@
 // pages/select/index.js
+const db = require("../../assets/db.js")
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    productSorts: [],
+    menuList: db.menuList || [],
+    curIndex: 'dress',
+    toView: 'dress'
   },
-
+  switchTab(e) {
+    console.log(e);
+    this.setData({
+      curIndex: e.currentTarget.dataset.id,
+      toView: e.currentTarget.dataset.id
+    });
+    console.log(this.data.curIndex, this.data.toView);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -19,7 +31,11 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    let productSorts = db.productSorts || [];
+    productSorts.shift();
+    this.setData({
+      productSorts: productSorts
+    })
   },
 
   /**
